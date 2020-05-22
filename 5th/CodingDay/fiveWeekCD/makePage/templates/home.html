@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/home.css">
+    <title>유튜브 채널 소개하기</title>
+</head>
+<body>
+    <div class="channel1"> 
+        <h1>{{youtube1.name}}</h1> 
+        <p>🦁 Creator : {{youtube1.creator}}</p>
+        {% if youtube1.preference == 1 %}
+            <p>🦁 Preference : ⭐</p>
+        {% elif youtube1.preference == 2 %}
+            <p>🦁 Preference : ⭐⭐</p>
+        {% elif youtube1.preference == 3 %}
+            <p>🦁 Preference : ⭐⭐⭐</p>
+        {% elif youtube1.preference == 4 %}
+            <p>🦁 Preference : ⭐⭐⭐⭐</p>
+        {% elif youtube1.preference == 5 %}
+            <p>🦁 Preference : ⭐⭐⭐⭐⭐</p>
+        {% endif %}
+
+        {% if youtube1.live == True %}
+            <img class="live1-1" src="../static/onAirRed.png">
+        {% else %}
+            <img class="live1-2" src="../static/onAirDark.jpg">    
+        {% endif %}
+
+        <p>🦁 Subscribers : {{youtube1.subscribers}}</p>
+        <div class="video1">
+            <iframe width="30%" height="270px" src= "{{youtube1.link1}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="30%" height="270px" src= "{{youtube1.link2}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="30%" height="270px" src= "{{youtube1.link3}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="channel2"> 
+        <h1>{{youtube2.name}}</h1> 
+        <p>🦁 Creator : {{youtube2.creator}}</p>
+        {% if youtube2.preference == 1 %}
+            <p>🦁 Preference : ⭐</p>
+        {% elif youtube2.preference == 2 %}
+            <p>🦁 Preference : ⭐⭐</p>
+        {% elif youtube2.preference == 3 %}
+            <p>🦁 Preference : ⭐⭐⭐</p>
+        {% elif youtube2.preference == 4 %}
+            <p>🦁 Preference : ⭐⭐⭐⭐</p>
+        {% elif youtube2.preference == 5 %}
+            <p>🦁 Preference : ⭐⭐⭐⭐⭐</p>
+        {% endif %}
+
+        {% if youtube2.live == True %}
+            <img class="live2-1" src="../static/onAirRed.png">
+        {% else %}
+            <img class="live2-2" src="../static/onAirDark.jpg">
+        {% endif %}
+
+        <p>🦁 Subscribers : {{youtube2.subscribers}}</p>
+        <div class="video2">
+            <iframe width="30%" height="270px" src= "{{youtube2.link1}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="30%" height="270px" src= "{{youtube2.link2}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="30%" height="270px" src= "{{youtube2.link3}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="channel3"> 
+        <h1>🦁 Creator : {{youtube3.name}}</h1> 
+        <p>{{youtube3.creator}}</p>
+        {% if youtube3.preference == 1 %}
+            <p>🦁 Preference : ⭐</p>
+        {% elif youtube3.preference == 2 %}
+            <p>🦁 Preference : ⭐⭐</p>
+        {% elif youtube3.preference == 3 %}
+            <p>🦁 Preference : ⭐⭐⭐</p>
+        {% elif youtube3.preference == 4 %}
+            <p>🦁 Preference : ⭐⭐⭐⭐</p>
+        {% elif youtube3.preference == 5 %}
+            <p>🦁 Preference : ⭐⭐⭐⭐⭐</p>
+        {% endif %}
+
+        {% if youtube3.live == True %}
+            <img class="live3-1" src="../static/onAirRed.png">
+        {% else %}
+            <img class="live3-2" src="../static/onAirDark.jpg">
+        {% endif %}
+
+        <p>🦁 Subscribers : {{youtube3.subscribers}}</p>
+        <div class="video3">
+            <iframe width="30%" height="270px" src= "{{youtube3.link1}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="30%" height="270px" src= "{{youtube3.link2}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="30%" height="270px" src= "{{youtube3.link3}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <br><br> 
+</body>
+</html>
